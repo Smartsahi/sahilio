@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sahil Panjwani | Data Analyst | 2024</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <style>
+      :root {
+        --primary: #121212; /* Dark background */
+        --secondary: #6C63FF; /* Purple accent */
+        --light: #1E1E1E; /* Dark cards */
+        --dark: #FFFFFF; /* White text */
+        --accent: #FF6584; /* Pink accent */
+        --text-muted: #B0B0B0; /* Muted text */
+      }
+
+      body {
+        background-color: var(--primary);
+        color: var(--dark);
+        min-height: 100vh;
+      }
+
+      .pbgc {
+        background-color: var(--primary);
+        color: var(--dark);
+      }
+
+      .sbgc {
+        background-color: var(--light);
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        border: 1px solid #2A2A2A;
+      }
+
+      .pc {
+        color: var(--dark);
+      }
+
+      .navbar-dark {
+        background-color: rgba(0,0,0,0.3);
+        backdrop-filter: blur(10px);
+      }
+
+      .text-warning {
+        color: var(--secondary) !important;
+      }
+
+      .btn-warning {
+        background-color: var(--secondary);
+        border-color: var(--secondary);
+        color: white;
+      }
+
+      .btn-outline-warning {
+        color: var(--secondary);
+        border-color: var(--secondary);
+      }
+
+      .btn-outline-warning:hover {
+        background-color: var(--secondary);
+        color: white;
+      }
+
+      .my-card {
+        background-color: var(--light);
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: transform 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        border: 1px solid #2A2A2A;
+      }
+
+      .my-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(108, 99, 255, 0.2);
+      }
+
+      .skill-badge {
+        background-color: var(--secondary);
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        margin: 5px;
+        display: inline-block;
+      }
+
+      .project-card {
+        background-color: var(--light);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: transform 0.3s ease;
+        border: 1px solid #2A2A2A;
+      }
+
+      .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(108, 99, 255, 0.2);
+      }
+
+      .project-img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        border-bottom: 1px solid #2A2A2A;
+      }
+
+      /* Dark mode specific styles */
+      .text-light {
+        color: var(--text-muted) !important;
+      }
+
+      .form-control {
+        background-color: #2A2A2A;
+        border: 1px solid #3A3A3A;
+        color: white;
+      }
+
+      .form-control:focus {
+        background-color: #2A2A2A;
+        color: white;
+        border-color: var(--secondary);
+        box-shadow: 0 0 0 0.25rem rgba(108, 99, 255, 0.25);
+      }
+
+      footer {
+        background-color: #0A0A0A;
+        border-top: 1px solid #2A2A2A;
+      }
+
+      .social-link {
+        transition: all 0.3s ease;
+      }
+
+      .social-link:hover {
+        color: var(--secondary) !important;
+        transform: translateY(-3px);
+      }
+
+      .nav-link {
+        transition: all 0.3s ease;
+      }
+
+      .nav-link:hover {
+        color: var(--secondary) !important;
+      }
+
+      .mood i {
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .mood i:hover {
+        color: var(--secondary);
+      }
+
+      /* Certificate styles */
+      .certificate-card {
+        background-color: var(--light);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: transform 0.3s ease;
+        border: 1px solid #2A2A2A;
+      }
+
+      .certificate-img {
+        height: 200px;
+        width: 100%;
+        object-fit: contain;
+        background-color: #2A2A2A;
+        padding: 10px;
+      }
+
+      .certificate-badge {
+        background-color: var(--accent);
+        color: white;
+        padding: 3px 10px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        margin-right: 5px;
+      }
+
+      .github-btn {
+        background-color: #333;
+        color: white;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+      }
+
+      .github-btn:hover {
+        background-color: #444;
+        color: white;
+      }
+
+      @media (max-width: 768px) {
+        .my-nav {
+          display: none;
+        }
+
+        .navbar-dark {
+          background-color: #121212;
+        }
+      }
+    </style>
+  </head>
+  <body class="pbgc pc">
+    <header>
+      <nav class="navbar navbar-expand-lg text-white navbar-dark">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex justify-content-center align-items-center"
+            href="index.html"
+            ><span class="text-warning">Sahil</span> Panjwani</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+              <li class="nav-item mx-3">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="https://github.com/"
+                  target="_blank"
+                  ><i class="fa-brands fa-github text-warning fs-3"></i
+                ></a>
+              </li>
+              <li class="nav-item mx-3">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin text-warning fs-3"></i
+                ></a>
+              </li>
+              <li class="nav-item mx-3">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  ><i class="fa-brands fa-twitter text-warning fs-3"></i
+                ></a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item mood p-2">
+                <i class="fa fa-moon fs-4"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="home">
+        <div class="container py-3" id="Home">
+          <div class="my-home py-3">
+            <div
+              class="row d-flex justify-content-center align-items-center g-2 p-2"
+            >
+              <div class="col-12 col-sm-12 col-md-6 col-lg-4 py-1">
+                <div class="my-info">
+                  <h4>Hello, I'm</h4>
+                  <h3 class="fw-bold">
+                    <span class="text-warning">Sahil Panjwani</span> <br />Data Analyst
+                  </h3>
+                  <p class="text-light">
+                    Transforming raw data into meaningful insights through visualization and predictive modeling.
+                  </p>
+                  <a href="#Contact" class="btn btn-warning">Hire Me!</a>
+                  <a
+                    href="#"
+                    class="btn btn-outline-warning my-2 my-sm-3 my-md-2"
+                    >Download CV</a
+                  >
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-4 py-1">
+                <div class="my-img">
+                  <img
+                    src="sahilp.jpg"
+                    class="img-fluid w-100 rounded"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="overview sbgc p-3">
+                  <div class="ovr-sec w-100 border-bottom my-1">
+                    <h3 class="text-warning lh-2 fs-4">7+</h3>
+                    <p class="fs-6 lh-1 text-light">Projects Completed</p>
+                  </div>
+                  <div class="ovr-sec w-100 border-bottom my-1">
+                    <h3 class="text-warning lh-2 fs-4">10+</h3>
+                    <p class="fs-6 lh-1 text-light">Skills Acquired</p>
+                  </div>
+                  <div class="ovr-sec w-100 border-bottom my-1">
+                    <h3 class="text-warning lh-2 fs-4">100%</h3>
+                    <p class="fs-6 lh-1 text-light">Model Accuracy</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-sm-12 col-md-6 col-lg-1 py-1 d-none d-sm-none d-md-none d-lg-block"
+              >
+                <div class="my-nav shadow-lg pe-4 rounded">
+                  <ul class="text-center">
+                    <li class="py-3">
+                      <a href="#Home">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                      </a>
+                    </li>
+                    <li class="py-3">
+                      <a href="#About"
+                        ><i class="fa-solid fa-user"></i> <span>About</span></a
+                      >
+                    </li>
+                    <li class="py-3">
+                      <a href="#Projects"
+                        ><i class="fa-solid fa-laptop-code"></i>
+                        <span>Projects</span></a
+                      >
+                    </li>
+                    <li class="py-3">
+                      <a href="#Skills">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span>Skills</span></a
+                      >
+                    </li>
+                    <li class="py-3">
+                      <a href="#Contact">
+                        <i class="fa-solid fa-address-card"></i>
+                        <span>Contact</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aboutme sbgc" id="About">
+        <div class="container my-2 py-3 p-md-5">
+          <div class="row justify-content-center align-items-center g-2">
+            <div class="col-12 col-sm-12 col-md-7 col-lg-7">
+              <div class="my-info py-3 p-md-5">
+                <p class="text-light">About Me</p>
+                <h3 class="py-2">
+                  Professional
+                  <span class="text-warning">Data Analyst</span> with Expertise in Visualization
+                </h3>
+                <p class="text-light py-2">
+                  I'm Sahil Panjwani, a Data Analyst specializing in Python, SQL, and Tableau. I transform complex data into actionable insights through compelling visualizations and predictive models. My projects demonstrate my ability to solve real-world problems with data-driven approaches.
+                </p>
+                <div class="row g-2">
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="about-tick">
+                      <h6 class="text-light">
+                        <i class="fas fa-check text-warning"></i> Data Visualization
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="about-tick">
+                      <h6 class="text-light">
+                        <i class="fas fa-check text-warning"></i> Predictive Modeling
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="about-tick">
+                      <h6 class="text-light">
+                        <i class="fas fa-check text-warning"></i> Data Cleaning
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="about-tick">
+                      <h6 class="text-light">
+                        <i class="fas fa-check text-warning"></i> Business Intelligence
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-center align-items-center g-2">
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="my-email my-3">
+                      <i class="fa fa-envelope text-warning"></i>
+                      <div class="info">
+                        <span class="text-light">Email Me</span>
+                        <span>sahilpanjwani2503@gmail.com</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="my-email">
+                      <i class="fa fa-phone text-warning"></i>
+                      <div class="info">
+                        <span class="text-light">Make A Call</span>
+                        <span>+91 8010054392</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+              <div class="about-img">
+                <img src="netflix.PNG" class="img-fluid w-100" />
+                <h5 class="frontend d-none d-sm-none d-md-block d-lg-block">
+                  <span>Tableau Expert </span
+                  ><i class="fas fa-arrow-up text-warning"></i>
+                </h5>
+                <h5 class="backend d-none d-sm-none d-md-block d-lg-block">
+                  <span>Python Developer </span
+                  ><i class="fas fa-arrow-up text-warning"></i>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-3 education" id="Education">
+        <div class="container py-3">
+          <div class="education-info">
+            <h5 class="text-center">
+              My <span class="text-warning">Education</span> & Certifications
+            </h5>
+          </div>
+
+                <div class="row justify-content-center align-items-center g-2">
+                  <div class="heding py-3">
+                    <h5 class="text-warning">Certifications</h5>
+                  </div>
+
+                  <!-- Certificate Cards -->
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                    <div class="certificate-card h-100">
+                      <img src="sahild.jpg" class="certificate-img" alt=" Data Analytics">
+                      <div class="p-3">
+                        <h6>Data Analytics</h6>
+                        <p class="text-light small">Oneroadmap  | 2023</p>
+                        <div class="d-flex flex-wrap">
+                          <span class="certificate-badge"></span>
+                          <span class="certificate-badge">Data Analysis</span>
+                        </div>
+                        <a href="https://oneroadmap.app.skillsnetwork.site/validate/cert/CERT-B84AACF8
+" class="btn btn-sm btn-warning w-100 mt-2">View Certificate</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                    <div class="certificate-card h-100">
+                      <img src="sahilv.jpg" class="certificate-img" alt=" Accenture Data Analytics and Visualization">
+                      <div class="p-3">
+                        <h6> Data Analytics and Visualization</h6>
+                        <p class="text-light small">Accenture (via Forage) | 2025 | 2023</p>
+                        <div class="d-flex flex-wrap">
+                          <span class="certificate-badge">Data Cleaning</span>
+                          <span class="certificate-badge">Visualization</span>
+                          <span class="certificate-badge">Storytelling</span>
+                          <span class="certificate-badge">Client Presentation</span>
+                        </div>
+                        <a href="https://theforage.com/" class="btn btn-sm btn-warning w-100 mt-2">View Certificate</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                    <div class="certificate-card h-100">
+                      <img src="sahiltt.jpg" class="certificate-img" alt="Tableau Desktop Specialist">
+                      <div class="p-3">
+                        <h6>Tableau Desktop Specialist</h6>
+                        <p class="text-light small">jabaaj | 2023</p>
+                        <div class="d-flex flex-wrap">
+                          <span class="certificate-badge">Tableau</span>
+                          <span class="certificate-badge">Visualization</span>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-warning w-100 mt-2">View Certificate</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                    <div class="certificate-card h-100">
+                      <img src="sahilpc.jpg" class="certificate-img" alt="PyCharm for Beginners">
+                      <div class="p-3">
+                        <h6>PyCharm for Beginners</h6>
+                        <p class="text-light small">Great Learning | 2023</p>
+                        <div class="d-flex flex-wrap">
+                          <span class="certificate-badge">Python</span>
+                          <span class="certificate-badge">Machine Learning</span>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-warning w-100 mt-2">View Certificate</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                    <div class="certificate-card h-100">
+                      <img src="sahilf.jpg" class="certificate-img" alt="Introduction to Firewall">
+                      <div class="p-3">
+                        <h6>Introduction to Firewall</h6>
+                        <p class="text-light small">Great Learning| 2023</p>
+                        <div class="d-flex flex-wrap">
+                          <span class="certificate-badge">SQL</span>
+                          <span class="certificate-badge">Database</span>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-warning w-100 mt-2">View Certificate</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
+                    <div class="certificate-card h-100">
+                      <img src="sahilpy.jpg" class="certificate-img" alt="Python Project">
+                      <div class="p-3">
+                        <h6>Python Project</h6>
+                        <p class="text-light small">Great Learning| 2023</p>
+                        <div class="d-flex flex-wrap">
+                          <span class="certificate-badge">Python</span>
+                          <span class="certificate-badge">project</span>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-warning w-100 mt-2">View Certificate</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-4 Projects" id="Projects">
+        <div class="container py-3">
+          <div class="heading text-center">
+            <p class="text-light">Featured Projects</p>
+            <h5>
+              My <span class="text-warning">Data Analysis</span> Projects
+            </h5>
+          </div>
+          <div class="row g-3 py-4">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="project-card">
+                <img src="sahilco.jpg" class="project-img" alt="COVID-19 Tracker">
+                <div class="p-3">
+                  <h5>COVID-19 Tracker Dashboard</h5>
+                  <p class="text-light">Interactive Tableau dashboard visualizing global pandemic data with country comparisons.</p>
+                  <div class="d-flex flex-wrap">
+                    <span class="skill-badge">Tableau</span>
+                    <span class="skill-badge">Data Visualization</span>
+                    <span class="skill-badge">Dashboard</span>
+                  </div>
+                  <a href="https://github.com/" target="_blank" class="btn github-btn w-100 mt-2">
+                    <i class="fab fa-github"></i> View Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="project-card">
+                <img src="sahilnet.jpg" class="project-img" alt="Netflix Analysis">
+                <div class="p-3">
+                  <h5>Netflix Dashboard Analysis</h5>
+                  <p class="text-light">Exploration of Netflix's content library with filters by country, genre, and year.</p>
+                  <div class="d-flex flex-wrap">
+                    <span class="skill-badge">Tableau</span>
+                    <span class="skill-badge">Data Cleaning</span>
+                    <span class="skill-badge">Trend Analysis</span>
+                  </div>
+                  <a href="https://public.tableau.com/app/profile/sahil.panjwani/viz/netflix_17231726549760/Netflix?publish=yes" target="_blank" class="btn github-btn w-100 mt-2">
+                    <i class="fab fa-github"></i> View Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="project-card">
+                <img src="sahilfr.jpg" class="project-img" alt="Anomaly Detection">
+                <div class="p-3">
+                  <h5>Financial Anomaly Detection</h5>
+                  <p class="text-light">ML model using Isolation Forest to detect unusual transactions with 100% accuracy.</p>
+                  <div class="d-flex flex-wrap">
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">Machine Learning</span>
+                    <span class="skill-badge">Plotly</span>
+                  </div>
+                  <a href="https://github.com/Smartsahi/-Anomaly-Detection-in-Transactions/" target="_blank" class="btn github-btn w-100 mt-2">
+                    <i class="fab fa-github"></i> View Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="project-card">
+                <img src="sahilu.jpg" class="project-img" alt="Retail Forecasting">
+                <div class="p-3">
+                  <h5>Automated Video Chaptering System</h5>
+                  <p class="text-light">"Built an AI tool that segments YouTube videos into chapters using transcript analysis and clustering based on video URL input."</p>
+                  <div class="d-flex flex-wrap">
+                    <span class="skill-badge">Python</span>
+                     <span class="skill-badge">NLP</span>
+                     <span class="skill-badge">YouTube API</span>
+                     <span class="skill-badge">Clustering</span>
+                     <span class="skill-badge">Deployment</span>
+                  </div>
+                  <a href="https://github.com/" target="_blank" class="btn github-btn w-100 mt-2">
+                    <i class="fab fa-github"></i> View Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="project-card">
+                <img src="sahilb.jpg" class="project-img" alt="Blinkit Sales Dashboard">
+                <div class="p-3">
+                  <h5>Blinkit Sales Dashboard</h5>
+                  <p class="text-light">Built an interactive Power BI dashboard for Blinkit, enabling insights into sales, outlet performance, and item analysis across regions.</p>
+                  <div class="d-flex flex-wrap">
+                    <span class="skill-badge">Power BI</span>
+                    <span class="skill-badge">Data Visualization</span>
+                    <span class="skill-badge">Business Intelligence</span>
+                  </div>
+                  <a href="https://github.com/" target="_blank" class="btn github-btn w-100 mt-2">
+                    <i class="fab fa-github"></i> View Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="project-card">
+                <img src="agribot.JPG" class="project-img" alt="Agricultural Assistant App">
+                <div class="p-3">
+                  <h5>Agricultural Assistant App</h5>
+                  <p class="text-light">A smart farming assistant that recommends crops, predicts plant diseases from images,
+            and answers agricultural queries via chatbot. Combines ML, DL, and NLP in a user-friendly GUI.</p>
+                  <div class="d-flex flex-wrap">
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">Tkinter</span>
+                    <span class="skill-badge">TensorFlow</span>
+                     <span class="skill-badge">scikit-learn</span>
+                    <span class="skill-badge">NLTK</span>
+                  </div>
+                  <a href="https://github.com/" target="_blank" class="btn github-btn w-100 mt-2">
+                    <i class="fab fa-github"></i> View Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skilss py-2" id="Skills">
+        <div class="container sbgc p-2 p-md-5 p-lg-5">
+          <div class="row g-2 align-items-center">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+              <p class="my-sm-3 my-md-5 text-light">Skills</p>
+              <h3 class="my-2">
+                My Technical <br />
+                <span class="text-warning">Skills & Expertise</span>
+              </h3>
+              <p class="my-2 text-light">
+                I combine technical data skills with business acumen to deliver actionable insights through:
+              </p>
+              <div class="d-flex flex-wrap my-3">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">SQL</span>
+                <span class="skill-badge">Tableau</span>
+                <span class="skill-badge">Power BI</span>
+                <span class="skill-badge">Excel</span>
+                <span class="skill-badge">Pandas</span>
+                <span class="skill-badge">NumPy</span>
+                <span class="skill-badge">scikit-learn</span>
+                <span class="skill-badge">Machine Learning</span>
+                <span class="skill-badge">Data Visualization</span>
+                <span class="skill-badge">Statistical Analysis</span>
+                <span class="skill-badge">Data Cleaning</span>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="skill-img">
+                <img src="sahilt.jpg" class="img-fluid w-100">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-4 Service" id="Service">
+        <div class="container py-3">
+          <div class="heading text-center">
+            <p class="text-light">My Services</p>
+            <h5>
+              How I Can <span class="text-warning">Help You</span> With Data
+            </h5>
+          </div>
+          <div class="row g-3 py-4">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="my-service">
+                <div class="my-card p-3">
+                  <span class="text-warning">01.</span>
+                  <div class="middle">
+                    <h6>Data Analysis & Reporting</h6>
+                    <p class="text-light">Transforming raw data into actionable insights with clear visualizations and reports.</p>
+                  </div>
+                  <i class="fas fa-arrow-right text-warning"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="my-service">
+                <div class="my-card p-3">
+                  <span class="text-warning">02.</span>
+                  <div class="middle">
+                    <h6>Interactive Dashboards</h6>
+                    <p class="text-light">Creating dynamic Tableau/Power BI dashboards for real-time business monitoring.</p>
+                  </div>
+                  <i class="fas fa-arrow-right text-warning"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="my-service">
+                <div class="my-card p-3">
+                  <span class="text-warning">03.</span>
+                  <div class="middle">
+                    <h6>Predictive Modeling</h6>
+                    <p class="text-light">Building machine learning models for forecasting and pattern recognition.</p>
+                  </div>
+                  <i class="fas fa-arrow-right text-warning"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="my-service">
+                <div class="my-card p-3">
+                  <span class="text-warning">04.</span>
+                  <div class="middle">
+                    <h6>Data Cleaning & Preparation</h6>
+                    <p class="text-light">Processing messy data into analysis-ready formats with Python and SQL.</p>
+                  </div>
+                  <i class="fas fa-arrow-right text-warning"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="my-service">
+                <div class="my-card p-3">
+                  <span class="text-warning">05.</span>
+                  <div class="middle">
+                    <h6>Business Intelligence</h6>
+                    <p class="text-light">Identifying trends and opportunities to drive strategic decisions.</p>
+                  </div>
+                  <i class="fas fa-arrow-right text-warning"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="my-service">
+                <div class="my-card p-3">
+                  <span class="text-warning">06.</span>
+                  <div class="middle">
+                    <h6>Database Management</h6>
+                    <p class="text-light">Designing and optimizing SQL databases for efficient data storage and retrieval.</p>
+                  </div>
+                  <i class="fas fa-arrow-right text-warning"></i>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="contact py-4" id="Contact">
+        <div class="container py-3">
+          <div class="heading text-center">
+            <p class="text-light">Get In Touch</p>
+            <h5>
+              Contact <span class="text-warning">Me</span>
+            </h5>
+          </div>
+          <div class="row g-3 py-4">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="contact-info sbgc p-4">
+                <h5 class="text-warning">Let's talk about your data needs</h5>
+                <p class="my-3 text-light">I'm available for freelance projects and full-time positions. Reach out to discuss how I can help with your data challenges.</p>
+
+                <div class="my-3">
+                  <div class="d-flex align-items-center gap-3 my-3">
+                    <i class="fas fa-envelope text-warning fs-4"></i>
+                    <div>
+                      <h6>Email</h6>
+                      <p class="text-light">sahilpanjwani2503@gmail.com</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center gap-3 my-3">
+                    <i class="fas fa-phone text-warning fs-4"></i>
+                    <div>
+                      <h6>Phone</h6>
+                      <p class="text-light">+91 8010054392</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center gap-3 my-3">
+                    <i class="fas fa-map-marker-alt text-warning fs-4"></i>
+                    <div>
+                      <h6>Location</h6>
+                      <p class="text-light">Mumbai, India</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="social-links d-flex gap-3 my-4">
+                  <a href="https://www.linkedin.com/in/sahil-panjwani-5668b1312/" class="text-warning"><i class="fab fa-linkedin fs-3"></i></a>
+                  <a href="https://github.com/Smartsahi" class="text-warning"><i class="fab fa-github fs-3"></i></a>
+                  <a href="#" class="text-warning"><i class="fab fa-twitter fs-3"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+  <div class="contact-form sbgc p-4">
+    <form>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="name" placeholder="Your Name">
+        <label for="name">Your Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="email" placeholder="Your Email">
+        <label for="email">Your Email</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="subject" placeholder="Subject">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="form-floating mb-3">
+        <textarea class="form-control" placeholder="Your Message" id="message" style="height: 150px"></textarea>
+        <label for="message">Your Message</label>
+      </div>
+      <button type="submit" class="btn btn-warning w-100">Send Message</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-4">
+      <div class="container">
+        <div class="text-center">
+          <h5>Sahil Panjwani</h5>
+          <p class="text-light">Data Analyst | Python & SQL Expert | Data Visualization Specialist</p>
+          <div class="social-links d-flex justify-content-center gap-3 my-3">
+            <a href="#" class="text-warning"><i class="fab fa-linkedin fs-4"></i></a>
+            <a href="#" class="text-warning"><i class="fab fa-github fs-4"></i></a>
+            <a href="#" class="text-warning"><i class="fab fa-twitter fs-4"></i></a>
+          </div>
+          <p class="mt-3 text-light">© 2024 Sahil Panjwani. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    ></script>
+  </body>
+</html>
